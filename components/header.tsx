@@ -17,14 +17,16 @@ const Header = () => {
                 animate={{ y: "0%" }}
                 transition={{
                     type: "tween",
-                    delay: 0.1,
-                    duration: 0.25,
+                    delay: 0.2,
+                    duration: 0.5,
                     ease: "linear",
                 }}
             >
+                {/*sky-300/60*/}
+                {/*blue-300/60*/}
                 <nav className="navbar w-full py-4 bg-blue-300/60 flex justify-between md:flex md:justify-around items-center shadow-md">
                     {/* Logo */}
-                    <div className="mx-12 flex justify-center items-center h-10 w-10 rounded-full bg-slate-950/70  cursor-pointer">
+                    <div className="mx-12 flex justify-center items-center h-10 w-10 rounded-full bg-slate-950/70 hover:scale[1.15] active:scale[1.10] hover:bg-slate-950/90 cursor-pointer">
                         <Link
                             href="/"
                             className={`${slacksideOne.className} text-2xl text-slate-50 h-full`}
@@ -41,7 +43,7 @@ const Header = () => {
                             ))}
                         </ul>
                         <div className="flex items-center md:hidden mr-12">
-                            <RxHamburgerMenu className="text-2xl text-[#F1F5F9] md:none" />
+                            <RxHamburgerMenu className="text-2xl text-dark-gray/70 md:none" />
                         </div>
                     </div>
                 </nav>

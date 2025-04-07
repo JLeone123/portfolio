@@ -17,11 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    {/*  bg-sky-200 */}
+
       <body
         className={`relative ${inter.className} bg-background text-dark-gray w-full h-full bg-blue-300 antialiased`}
       >
         <Header />
-        <div className="blue-dot absolute w-96 h-108 bg-red/90 blur-lg top-0 left-0"></div>
+        {/* sky 200, sky-200/70,*/}
+        <div className="blue-dot z-[-1] absolute left-1/5 w-150 h-[80%] bg-blue-400/10 blur-3xl"></div>
         {children}
       </body>
     </html>
